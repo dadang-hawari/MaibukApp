@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/maibuk_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        tools:targetApi="31">
+        <activity
+            android:name=".geography"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/mainTheme"/>
+        <activity
+            android:name=".audio"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/mainTheme" />
+        <activity
+            android:name=".berkendara"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/mainTheme" />
+        <activity
+            android:name=".petualangan"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/mainTheme" />
+        <activity
+            android:name=".list_ebuk"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/mainTheme" />
+        <activity
+            android:name=".top_picks"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/mainTheme" />
+        <activity
+            android:name=".Cart"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/mainTheme" />
+        <activity
+            android:name=".About"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/mainTheme" />
+        <activity
+            android:name=".Promo"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/mainTheme" />
+        <activity
+            android:name=".Search"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/mainTheme" />
+        <activity
+            android:name=".MyBook"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/mainTheme" />
+        <activity
+            android:name=".CreateAccount"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/LCTheme" />
+        <activity
+            android:name=".Login"
+            android:exported="false"
+            android:screenOrientation="nosensor"
+            android:theme="@style/LCTheme" />
+        <activity
+            android:name=".home"
+            android:launchMode="singleTop"
+            android:screenOrientation="nosensor"
+            android:theme="@style/mainTheme" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="nosensor"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">MaiBuk</string>
+    <string name="daftar_u"><u>Daftar</u></string>
+    <string name="masuk"><u>Masuk</u></string>
+    <string name="buat_akun"><b>Buat Akun</b></string>
+    <string name="the_tale_of_monster_falls">The Tale of Monster Falls</string>
+    <string name="yael_almari">Yael Almari</string>
+    <string name="cerita_fiksi_yang_melibatkan_kehadiran_atau_petualangan_monster_dalam_suasana_jatuh_atau_sekitar_alam_yang_magis_mengikuti_perjalanan_protagonis_atau_karakter_karakter_lain_dalam_menghadapai_monster">Cerita fiksi yang melibatkan kehadiran atau petualangan monster dalam suasana jatuh atau sekitar alam yang magis. mengikuti perjalanan protagonis atau karakter-karakter lain dalam menghadapai monster.</string>
+    <string name="bacabukucerita"><i>bacabukucerita</i></string>
+    <string name="rp_120_000"><i><strike>Rp 90.000</strike></i></string>
+    <string name="bacabukupetualangan"><i>bacabukupetualangan</i></string>
+    <string name="rp_100_000"><i><strike>Rp 100.000</strike></i></string>
+    <string name="baca_selengkapnya"><i>Baca Selengkapnya...</i></string>
+    <string name="car_motor_bike_guide"><![CDATA[Car & Motor Bike Guide]]></string>
+    <string name="car_motor_bike_guides"><![CDATA[Car & Motor Bike Guide]]></string>
+
+</resources>

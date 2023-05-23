@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".top_picks"
+    android:background="@color/white"
+    >
+
+    <Toolbar
+        android:id="@+id/mytoolbar_top_books"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:elevation="2dp"
+        android:background="@color/white"
+        >
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            >
+            <ImageView
+                android:id="@+id/back_btn_promo"
+                android:layout_marginStart="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back_button"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="20dp"
+                />
+            <TextView
+                android:text="Top Picks"
+                android:paddingTop="5dp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:layout_gravity="center_vertical"
+                />
+        </LinearLayout>
+    </Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/rv_mybook"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/mytoolbar_top_books"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarThumbVertical="@null"
+            >
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+          >
+
+        <androidx.cardview.widget.CardView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             app:cardElevation="2.4dp"
+             app:cardCornerRadius = "10dp"
+             android:layout_gravity="center_horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+             >
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="5dp"
+                android:text="#1 Two Side : Discussing life from two \ndifferent sides"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        <LinearLayout
+            android:layout_marginTop="-10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding = "10dp"
+            >
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:background="@drawable/book_4"
+                android:layout_marginEnd="8dp"
+
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:text="By Pedro Fernandes"
+                    android:layout_marginStart="4dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="11dp"
+                    android:text="Buku yang menceritakan tentang perjalanan seorang individu yang berjuang untuk menemukan keseimbangan antara dua sisi yang bertentangan dalam dridinya, menghadapi tantangan dan pencarian jati diri."
+                    android:textAlignment="textStart"
+                    android:layout_marginStart="4dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/baca_selengkapnya"
+                    android:textAlignment="textStart"
+                    android:textColor="#347775"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="-10dp"
+                    >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:elevation="5dp"
+                    android:src="@drawable/star48"/>
+                    <TextView
+                        android:layout_marginStart="-20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="4,8.  2.203 sold &amp; 1.943 reviews"
+                        android:layout_gravity="center_vertical"
+                        />
+                </LinearLayout>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:textSize="12sp"
+                    android:layout_height="36dp"
+                    android:textStyle="bold"
+                    android:text="Rp 107.000"
+                    android:background="@drawable/promo_btn2"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16.7dp"
+                    android:layout_marginEnd="16.7dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="15dp"
+                    >
+
+                    <Button
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:text="Tambahkan ke Cart"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:backgroundTint="@color/main_col"
+                        android:stateListAnimator="@null"
+                        />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Baca Sekarang"
+                        android:textColor="@color/white"
+                        android:backgroundTint="@color/main_col"
+                        android:textAllCaps="false"
+                        android:stateListAnimator="@null"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="2.4dp"
+                    app:cardCornerRadius = "10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="20dp"
+                    >
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="5dp"
+                            android:text="#2 Mistery of The Village"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:padding = "10dp"
+                            >
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="150dp"
+                                android:background="@drawable/book_9"
+                                android:layout_marginEnd="8dp"
+
+                                />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:textSize="12sp"
+                                    android:text="By Boris Wilson"
+                                    android:layout_marginStart="4dp"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="11dp"
+                                    android:text="Berkisah tentang sebuah desa yang terperangkap dalam misteri yang tak terpecahkan. Dalam cerita ini, para penghuni desa dan  berusaha memecahkan teka-teki dan mengungkap rahasia yang tersembunyi di balik peristiwa misterius tersebut."
+                                    android:textAlignment="textStart"
+                                    android:layout_marginStart="4dp"
+                                    />
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/baca_selengkapnya"
+                                    android:textAlignment="textStart"
+                                    android:textColor="#347775"
+                                    />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginTop="-10dp"
+                            >
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:elevation="5dp"
+                                android:src="@drawable/star47"/>
+                            <TextView
+                                android:layout_marginStart="-20dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="4,7.  1.905 sold &amp; 1.542 reviews"
+                                android:layout_gravity="center_vertical"
+                                />
+                        </LinearLayout>
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:textSize="12sp"
+                            android:layout_height="36dp"
+                            android:textStyle="bold"
+                            android:text="Rp 115.000"
+                            android:background="@drawable/promo_btn2"
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16.7dp"
+                            android:layout_marginEnd="16.7dp"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="15dp"
+                            >
+
+                            <Button
+                                android:layout_width="140dp"
+                                android:layout_height="wrap_content"
+                                android:text="Tambahkan ke Cart"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white"
+                                android:backgroundTint="@color/main_col"
+                                android:stateListAnimator="@null"
+                                />
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Baca Sekarang"
+                                android:textColor="@color/white"
+                                android:backgroundTint="@color/main_col"
+                                android:textAllCaps="false"
+                                android:stateListAnimator="@null"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="2.4dp"
+                    app:cardCornerRadius = "10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="20dp"
+                    >
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="5dp"
+                            android:text="#3 The Beauty of The Night"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:padding = "10dp"
+                            >
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="150dp"
+                                android:background="@drawable/book_5"
+                                android:layout_marginEnd="8dp"
+
+                                />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:textSize="12sp"
+                                    android:text="By Heri Mark"
+                                    android:layout_marginStart="4dp"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="11dp"
+                                    android:text="Buku yang menceritakan keindahan dan pesona malam. Menggambarkan suasana magis atau misterius yang terjadi pada malam hari, menciptakan atmosfer yang menarik dan memikat bagi pembaca.
+"
+                                    android:textAlignment="textStart"
+                                    android:layout_marginStart="4dp"
+                                    />
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/baca_selengkapnya"
+                                    android:textAlignment="textStart"
+                                    android:textColor="#347775"
+                                    />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginTop="-10dp"
+                            >
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:elevation="5dp"
+                                android:src="@drawable/star5"/>
+                            <TextView
+                                android:layout_marginStart="-20dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="5,0.  800 sold &amp; 403 reviews"
+                                android:layout_gravity="center_vertical"
+                                />
+                        </LinearLayout>
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:textSize="12sp"
+                            android:layout_height="36dp"
+                            android:textStyle="bold"
+                            android:text="Rp 100.000"
+                            android:background="@drawable/promo_btn2"
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16.7dp"
+                            android:layout_marginEnd="16.7dp"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="15dp"
+                            >
+
+                            <Button
+                                android:layout_width="140dp"
+                                android:layout_height="wrap_content"
+                                android:text="Tambahkan ke Cart"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white"
+                                android:backgroundTint="@color/main_col"
+                                android:stateListAnimator="@null"
+                                />
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Baca Sekarang"
+                                android:textColor="@color/white"
+                                android:backgroundTint="@color/main_col"
+                                android:textAllCaps="false"
+                                android:stateListAnimator="@null"
+                                />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>

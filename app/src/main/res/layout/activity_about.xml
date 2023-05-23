@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".About"
+    android:background="@color/white"
+    >
+
+    <TextView
+        android:id="@+id/about"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="About"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textStyle="bold"
+        />
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/toolbar_dropshadow"
+        android:layout_below="@id/about"
+        />
+
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:id="@+id/logonya"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/maibuk_splash"
+        android:layout_gravity="center"
+        android:layout_below="@id/line"
+        android:padding="20dp"
+        android:background="@drawable/background_about_logo"
+        android:layout_centerHorizontal="true"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:id="@+id/credit"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logonya"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/background_about"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Credits"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            />
+        <View
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="@color/black"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            />
+        <TextView
+            android:textSize="12sp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Menu Icons from flaticon by juicy_fish"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:text="www.flaticon.com/packs/books-41?word=book"
+            />
+        <TextView
+            android:layout_marginTop="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Book and Stores Images from Canva"
+            android:textSize="12sp"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Maibuk Team"
+            android:textSize="14.7sp"
+            android:textStyle="bold"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="@color/black"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Muh. Dadang Hawari (210210502082)"
+            />
+        <TextView
+            android:layout_marginTop="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nur Ikhzan (210210502088)"
+            />
+        <TextView
+            android:layout_marginTop="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Adam Fatahillah (210210502102)"
+            />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_below="@id/credit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Copyright © Maibuk "
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/background_about"
+        android:padding="10dp"
+        />
+
+
+
+
+
+    <LinearLayout
+        android:elevation="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:paddingTop="7dp"
+        android:paddingBottom="5dp"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        >
+        <LinearLayout
+            android:id="@+id/home_icon_bar"
+            android:layout_marginEnd="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bar1_home"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Home"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/mybook_icon"
+            android:layout_marginEnd="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bar2_mybook"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="MyBook"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/cart_icon"
+            android:layout_marginEnd="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bar3_cart"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Cart"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/profil_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bar3_profil_blue"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="About"
+                android:textColor="@color/main_col"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
